@@ -46,9 +46,6 @@ async function createRequest<T = void>(path: string, opts: RequestInit = {}) {
   }
 }
 
-// @ts-ignore
-window.login = login;
-
 export async function login(username: string, password: string) {
   const response = await createRequest<{ token: string }>('authenticate', {
     method: METHODS.POST,

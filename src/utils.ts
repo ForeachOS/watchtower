@@ -5,6 +5,7 @@ export function useLocalStorage<T>(key: string, initialValue: T): [T, React.Disp
   // Pass initial state function to useState so logic is only executed once
   const [storedValue, setStoredValue] = React.useState<T>(() => {
     try {
+      if (typeof window === 'undefined') return initialValue;
       // Get from local storage by key
       const item = window.localStorage.getItem(key);
       // Parse stored json or if none return initialValue

@@ -1,0 +1,67 @@
+.grid__outer {
+  display: grid;
+  grid-template-columns: 1fr 15rem;
+  grid-gap: 1rem;
+}
+
+.grid__inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.grid__inner-icon {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.grid__inner-icon--drag {
+  width: 20px;
+  margin-right: 1rem;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.grid__inner-icon--trash {
+  cursor: pointer;
+
+  img {
+    width: 20px;
+  }
+}
+
+.grid__inner-icon--default {
+  text-transform: capitalize;
+  padding: 5px 10px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 1rem;
+  background-color: var(--primary-color);
+}
+
+.grid__inner-particle {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+  border: none;
+  color: var(--primary-color-dark);
+  font-family: "Open Sans Condensed", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.particle--button {
+  text-align: center;
+  font-weight: 700;
+}
+
+.grid__inner-outlook {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+}

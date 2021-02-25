@@ -1,0 +1,21 @@
+@import "./scss/reset.css";
+@import "./scss/defaults.scss";
+@import "./scss/page-layout.scss";
+@import "./scss/grid.scss";
+
+
+.Button {
+  padding: 10px;
+  appearance: none;
+  margin: 10px;
+  border-radius: 3px;
+  background: transparent;
+  border: 1px solid var(--primary-color-light);
+  color: var(--primary-color-light);
+  transition: all 300ms ease;
+  &:hover {
+
+    background: var(--primary-color-light);
+    color: var(--primary-color-dark);
+  }
+}

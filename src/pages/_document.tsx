@@ -11,6 +11,7 @@ class MyDocument extends Document {
     return (
       <Html lang="nl">
         <Head>
+          <title>Watchtower</title>
           <link
             href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap"
             rel="stylesheet"

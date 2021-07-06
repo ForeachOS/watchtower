@@ -137,14 +137,14 @@ const mockDefaultResponse: GetUserResponse = {
         ImageLink: 'biblio.svg',
       },
       {
-        ItemName: 'Car Policy',
-        ItemLink: 'https://confluence.projects.foreach.be/pages/viewpage.action?pageId=60228593',
-        ImageLink: 'car.png',
-      },
-      {
         ItemName: 'Clockify',
         ItemLink: 'https://clockify.me/tracker',
         ImageLink: 'clockify.ico',
+      },
+      {
+        ItemName: 'Partner in benefits',
+        ItemLink: 'https://foreach.myben.be/',
+        ImageLink: 'myben.png',
       },
     ],
   },
